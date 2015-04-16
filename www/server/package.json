@@ -1,0 +1,22 @@
+{
+  "name": "ionicMonger",
+  "version": "0.0.1",
+  "description": "Real time Chat using Socket.io, AngularJS, and time mongoDB",
+  "main": "server.js",
+  "dependencies": {
+    "socket.io": "~1.0.4",
+    "moment": "~2.7.0",
+    "express": "~4.4.3",
+    "body-parser": "~1.3.1",
+    "q": "~1.0.1",
+    "morgan": "^1.0.0",
+    "bcrypt": "^0.8.1",
+    "mongojs": "^0.13.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "David He",
+  "license": "MIT"
+}

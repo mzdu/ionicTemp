@@ -1,0 +1,58 @@
+<!--
+  This template loads for the 'tab.friend-detail' state (app.js)
+  'friend' is a $scope variable created in the FriendsCtrl controller (controllers.js)
+  The FriendsCtrl pulls data from the Friends service (service.js)
+  The Friends service returns an array of friend data
+-->
+
+
+<ion-view view-title="{{chat.name}}">
+
+    <ion-header-bar class="bar-positive">
+      <button class="button button-icon icon ion-navicon"></button>
+      <h1 class="title">Chatting in {{activeChannel}} as {{userName}}</h1>
+       <div class="buttons">
+        <button class="button button-icon icon ion-log-out" ng-click="logout()"></button>
+      </div>
+    </ion-header-bar>
+
+   <!--  <ion-content>
+      <div class="list">
+          <div class="item item-avatar" ng-repeat="message in messages">
+            <img src="img/venkman.jpg" alt="{{message.time}}">
+            <h2>{{message.name}}</h2>
+            <p>{{message.message}}</p>
+          </div>
+      </div>
+    </ion-content> -->
+
+      <ion-content class="padding">
+        <img ng-src="{{chat.face}}" style="width: 64px; height: 64px">
+        <p>
+          {{chat.lastText}}
+        </p>
+         <div class="list">
+          <div class="item item-avatar" ng-repeat="message in messages">
+            <img src="img/venkman.jpg" alt="{{message.time}}">
+            <h2>{{message.name}}</h2>
+            <p>{{message.message}}</p>
+          </div>
+      </div>
+    </ion-content>
+
+    <ion-footer-bar align-title="left">
+      <div class="item-input-inset" style="width: 100%">
+        <label class="item-input-wrapper">
+          <i class="icon placeholder-icon"></i>
+          <input type="text" placeholder="Type Message Here.." ng-model="draft.message">
+        </label>
+        <button class="button button-positive" ng-click="sendMessage(draft)">
+          Send
+        </button>
+      </div>
+    </ion-footer-bar>
+
+
+</ion-view>
+
+ 

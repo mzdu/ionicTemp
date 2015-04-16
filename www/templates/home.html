@@ -1,0 +1,65 @@
+<!--
+  This template loads for the 'tab.friend-detail' state (app.js)
+  'friend' is a $scope variable created in the FriendsCtrl controller (controllers.js)
+  The FriendsCtrl pulls data from the Friends service (service.js)
+  The Friends service returns an array of friend data
+-->
+
+
+<ion-view hide-nav-bar="true" view-title="Home" class="landing">
+
+<!-- <div class="bar bar-header">
+  <h1 class="title">Help Monger</h1>
+</div> -->
+
+  <ion-content class="padding" scroll="false">      
+    
+     <div class="row row-center">  
+          <img id="logo" src="img/mongerLogo2.png">      
+      </div>
+
+      <div class="row row-center">
+        <!-- <div class="col"></div> -->
+        <div class="col">
+          <p id="slogan">{{home}}</p>
+        </div>
+        <!-- <div class="col"></div> -->
+      </div>
+     
+      <!-- <div id="authButtons" class="row row-bottom">
+        <div class="col">
+          <button class="button button-full button-energized button" ng-click="signup()">Sign Up</button>
+        </div>
+      </div>
+      <div class="row row-bottom">
+        <div class="col-100 col">
+            <button class="button button-full button-positive button" ng-click="login()">Login</button>
+        </div>
+      </div> -->
+     <!--  <div class="row">
+        <div class="col"><img src="http://placehold.it/50x190"></div>
+        <div class="col col-top">Caption Top</div>
+        <div class="col col-bottom">Caption bottom</div>
+      </div> -->
+
+      <!-- <div class="bar bar-footer bar-clear"> -->
+      <div id="authButtons">
+        <button class="button button-full button-energized" ng-click="signup()">Sign Up</button>
+
+        <button class="button button-full button-positive" ng-click="login()">Login</button>
+      </div>
+    <!-- </div> -->
+
+<!-- <button class="button button-positive"> -->
+  </ion-content>
+
+
+
+
+   <!-- <button class="bar bar-footer bar-positive" ng-click="test()">
+      <div class="title">Test</div>
+    </button> -->
+
+
+
+</ion-view>

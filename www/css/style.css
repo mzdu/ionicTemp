@@ -1,0 +1,89 @@
+/* Empty. Add your own CSS if you like */
+
+
+body, html {
+
+	color: #000;
+    background-color: #E7E7E7;
+}
+
+
+.table-container
+{  
+    display: table;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.table-cell {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.cell-centered
+{
+    margin-left: auto;
+    margin-right: auto;  
+    text-align: center;
+    color:#fff;
+}
+
+.landing h1 {
+	color: #fff;
+	display: block;
+}
+.text-center {
+	vertical-align: middle;
+
+}
+
+.landing {
+    background: url('../img/riverfront_canal.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+}
+
+.main {
+    background-color:#E7E7E7;
+}
+.main .button-full {
+    margin: 0px;
+}
+
+.main textarea {
+    overflow: hidden;
+    background:#fff; 
+    height:40%;
+    margin: 10px;
+    padding: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.6);
+}
+
+#logo {
+    
+}
+#slogan {
+    color:#fff;
+    font-weight: bold;
+    font-size: 1em;
+    text-shadow: 1px 1px #000;
+}
+.row-center img {
+    display:block;
+    margin-left:auto; 
+    margin-right:auto;
+}
+
+.row-center p {
+    text-align: center;
+}
+
+#authButtons {
+    margin-top: 75%;
+}
+
